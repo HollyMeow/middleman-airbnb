@@ -1,4 +1,4 @@
- <div class="navbar-wagon">
+<div class="navbar-wagon">
   <!-- Logo -->
   <a href="/" class="navbar-wagon-brand">
     <img src="images/logo.png" alt="logo">
@@ -15,16 +15,12 @@
 
     <%= link_to "Team", "/team.html", class: "navbar-wagon-item navbar-wagon-link" %>
 
-
+    <!-- Profile picture with dropdown list -->
     <div class="navbar-wagon-item">
       <div class="dropdown">
 
-    <!-- Profile picture with dropdown list -->
+      <%= image_tag "https://avatars1.githubusercontent.com/u/32415183?v=4", id: "navbar-wagon-menu", class: "avatar dropdown-toggle" %>
 
-
-        <!--<img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">-->
-
-        <%= image_tag "https://avatars1.githubusercontent.com/u/32415183?v=4", id: "navbar-wagon-menu", class: "avatar dropdown-toggle" %>
 
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
           <li><a href="#">Profile</a></li>
@@ -40,13 +36,10 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-    <%= link_to "Host", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-
-    <%= link_to "Trips", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-
-    <%= link_to "About", "/about.html", class: "navbar-wagon-item navbar-wagon-link" %>
-
-    <%= link_to "Team", "/team.html", class: "navbar-wagon-item navbar-wagon-link" %>
+        <li><%= link_to "Host", "#", class: "navbar-wagon-item navbar-wagon-link" %></li>
+        <li><%= link_to "Trips", "#", class: "navbar-wagon-item navbar-wagon-link" %></li>
+        <li><%= link_to "About", "/about.html", class: "navbar-wagon-item navbar-wagon-link" %></li>
+        <li><%= link_to "Team", "/team.html", class: "navbar-wagon-item navbar-wagon-link" %></li>
       </ul>
     </div>
   </div>
